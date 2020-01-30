@@ -186,7 +186,7 @@ class AddPage extends React.Component  {
           <p>Description:</p>
           <input id="addDescription" type="textarea" form="addForm" rows="5" cols="30" name="description" style={{width: "325px", border: this.descriptionInvalid ? "1px solid red" : "1px solid grey", outline: "none" }} value={this.state.description} onChange={this.onChange} required />
           <div className="dummy" style={{ width: "325px", height: "25px"}}>
-            {this.descriptionInvalid ? <p style={{color: "red", fontSize: "11px"}}>Maximum 200 characters exceeded</p> : null }
+            {this.descriptionInvalid ? <p style={{color: "red", fontSize: "11px"}}>Maximum 300 characters exceeded</p> : null }
           </div>
         </div>
         <div>
