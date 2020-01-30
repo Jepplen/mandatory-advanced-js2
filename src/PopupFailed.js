@@ -18,7 +18,7 @@ class PopupFailed extends React.Component  {
         this.setState({over25: true, movie: movie});
       }
     } else {
-      this.setState({movie: "No Movie"});
+      this.setState({movie: "Item not found"});
     }
 
   }
@@ -28,9 +28,9 @@ class PopupFailed extends React.Component  {
       <>
         <div className="mask">
           <div className="popupFailedContainer" style={{ width: this.state.over25 ? "500px" : "425px" }}>
-            <div className="popupFailedHeader"><h4>ERROR CODE: #286TURBO_KNAPP</h4></div>
+            <div className="popupFailedHeader"><h4>Attention!</h4></div>
             <p className="popupFailedTextMovie" style={{fontWeight: "bold"}}>{this.state.movie}</p>
-            <p className="popupFailedText">#286TURBO_KNAPP: "This movie does not exist"</p>
+            <p className="popupFailedText">Movie was probably already deleted</p>
             <div className="popupFailedButtonContainer">
               <button id="buttonBack" onClick={() => this.props.backButton()}>Ok</button>
             </div>

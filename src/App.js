@@ -12,7 +12,6 @@ import logo from "./resources/logo.png";
 
 class App extends React.Component  {
 
-
   render() {
     return (
       <div className="App">
